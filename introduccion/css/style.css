@@ -1,0 +1,54 @@
+/*
+Flexbox
+    Alineamiento
+    Estas propiedades para alienar se aplican SIEMPRE al flex-container
+
+    Existen propiedades para el main-axis y para el cross-axis:
+
+    justify-content: flex-start(default) | center | space-between | space-around | space-evenly | flex-end
+
+    flex-start aline los elementos al principio del main axis
+    center centra los elementos en la mitad del main axis.
+    flex-end alinea los elementos al final del main axis.
+
+    space-between distribuye los items a la misma distancia y no deja espacio exterior ni el primer ni el ultimo flex-end.
+
+    space-around distribuye los items y los espacios exteriores del primer y ultimo flex-item dejando la misma distancia entre todos.
+
+    cross-axis
+        align-items: una sola linea.
+            flex-start | center | flex-end | stretch(default) | baseline
+        
+        align-content: varias lineas
+            flex-star | center | flex-end | stretche(default) | baseline
+        
+        align-self: se aplica al flex-item. sirve para alinear un elemento en concreto en el cross-axis
+*/
+
+.flex-container{
+    background-color: #FCA17D;
+    height: 400px;
+    display: flex;
+    margin-bottom: 1em;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly ; */
+    align-content: center;
+}
+
+.flex-item{
+    width: 50px;
+    height: 50px;
+    margin: .5em;
+    color:aliceblue;
+    background-color: #9A348E;
+    text-align: center;
+    line-height: 50px;
+}
+
+.box{
+    max-width: 50%;
+}
+
+.prices{
+    display: flex;
+}
